@@ -2,24 +2,9 @@
 <head>
     <title>OctoPrint login</title>
 
-    <link rel="stylesheet" href="{{ url_for("static", filename="css/bootstrap.min.css") }}">
-    <link rel="stylesheet" href="{{ url_for("static", filename="css/bootstrap-responsive.min.css") }}">
-    <link rel="stylesheet" href="{{ url_for("static", filename="css/font-awesome.min.css") }}">
-    <link rel="stylesheet" href="{{ url_for("plugin.forcelogin.static", filename="css/forcelogin.css") }}">
+    {% include "parts/forcelogin_css.jinja2" %}
 
-    <script>
-        var UI_API_KEY = "{{ uiApiKey }}";
-        var BASE_URL = "{{ url_for('index') }}";
-    </script>
-    <script src="{{ url_for("static", filename="js/lib/jquery/jquery-2.1.4.min.js") }}"></script>
-    <script src="{{ url_for("static", filename="js/lib/bootstrap/bootstrap.js") }}"></script>
-    <script src="{{ url_for("static", filename="js/lib/lodash.min.js") }}"></script>
-
-    {% assets "js_client" %}
-        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-    {% endassets %}
-
-    <script src="{{ url_for("plugin.forcelogin.static", filename="js/main.js") }}"></script>
+    {% include "parts/forcelogin_javascripts.jinja2" %}
 </head>
 <body>
     <div class="container">
