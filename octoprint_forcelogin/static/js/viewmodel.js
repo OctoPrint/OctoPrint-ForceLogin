@@ -4,7 +4,7 @@
  */
 
 $(function() {
-    function UiTestViewModel(parameters) {
+    function ForceLoginViewModel(parameters) {
         var self = this;
 
         self.onUserLoggedOut = function() {
@@ -13,5 +13,5 @@ $(function() {
     }
 
     // view model class, parameters for constructor, container to bind to
-    ADDITIONAL_VIEWMODELS.push([UiTestViewModel, [], []]);
+    ADDITIONAL_VIEWMODELS.push([ForceLoginViewModel, [], []]);
 });
