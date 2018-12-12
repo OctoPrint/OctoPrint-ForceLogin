@@ -1,10 +1,10 @@
+----
+
+**NOTE**: A different version of this plugin comes now bundled with OctoPrint 1.3.10+. This repository should be considered **obsolete** and is only kept for historical purposes.
+
+----
+
 # OctoPrint-ForceLogin
-
-----
-
-**Note** Requires OctoPrint 1.3.0 or later.
-
-----
 
 Forces users to login to access the regular web interface. 
 
